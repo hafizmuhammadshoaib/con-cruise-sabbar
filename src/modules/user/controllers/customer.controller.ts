@@ -12,10 +12,10 @@ export class CustomerController {
   }
 
   @Post()
-  async create(@Body() body: CustomerDto.CreateCustomer) {
+  async create(@Body() customer: CustomerDto.CreateCustomer) {
     const createCustomerParams: CreateCustomerParams = {
-      ...body,
-      name: body.fullName,
+      ...customer,
+      name: customer.fullName,
     };
     return this.customerService.createCustomer(createCustomerParams);
   }

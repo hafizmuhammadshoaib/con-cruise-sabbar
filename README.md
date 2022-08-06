@@ -29,3 +29,9 @@ $ npm run build # for first time
 $ npm run cli <command>
 $ npm run cli help # to see the list of commands
 ```
+
+## Running Integration Tests
+
+```bash
+$ npm run test:e2e
+```
